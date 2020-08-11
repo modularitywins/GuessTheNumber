@@ -16,7 +16,6 @@ def play_game():
             continue
         user_guess = int(user_guess)
         # verify the guess
-        is_guessed_correct = check_guess(user_guess, TARGET) # either true or false
         # if guess is correct -> break out of the loop
-        if is_guessed_correct:
+        if check_guess(user_guess, TARGET):
             break
